@@ -1,0 +1,86 @@
+/* ==========================================================================
+  Helper classes
+  ========================================================================== */
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.focusable.sr-only:active,
+.focusable.sr-only:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+.content-container {
+  margin: 0 auto;
+  max-width: 118rem;
+  padding: 0 2rem 4rem;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .content-container {
+    padding: 0 3.2rem 8rem;
+    margin-top: 4rem;
+  }
+}
+
+/* ==========================================================================
+  Helper classes
+  ========================================================================== */
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.focusable.sr-only:active,
+.focusable.sr-only:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+:root {
+  font-size: 10px;
+  height: 100%;
+}
+
+body {
+  overflow-anchor: none;
+  font-family: "Work Sans", sans-serif;
+  color: #FFFFFF;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #000000;
+  height: 100%;
+}
+/*# sourceMappingURL=main.css.map */

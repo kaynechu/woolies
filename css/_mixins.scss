@@ -1,0 +1,26 @@
+@import 'variables';
+
+
+@mixin breakpoint($point) {
+    @if $point == largest-up {
+        @media (min-width: map-get($sizes, breakpoint-largest)) {
+            @content;
+        }
+    }
+    @if $point == large-up {
+        @media (max-width: map-get($sizes, breakpoint-large)) {
+            @content;
+        }
+    }
+    @if $point == medium-up {
+        @media (max-width: map-get($sizes, breakpoint-medium)) {
+            @content;
+        }
+    }
+    @if $point == small-down {
+        @media (max-width: map-get($sizes, breakpoint-small)) {
+            @content;
+        }
+    }
+}
+

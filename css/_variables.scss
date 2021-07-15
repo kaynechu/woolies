@@ -1,0 +1,43 @@
+$sizes: (
+    pixel: 1px,
+    root: 10px,
+    text: 1.6rem,
+    line-height: 1.5,
+    container-width: 118rem,
+    gutter: 3.2rem,
+    device-gutter: 2rem,
+    spacing: 8rem,
+    device-spacing: 4rem,
+    breakpoint-small: 375px,
+    breakpoint-medium: 767px,
+    breakpoint-large: 1200px,
+    breakpoint-largest: 1440px,
+    dynamic-font-size-adjuster: 2.6666666667vw,
+    ratio-square: 100%,
+    ratio-hd-landscape: percentage(1080/1920),
+    ratio-hd-portrait: percentage(1920/1080)
+);
+
+$colors: (
+    text: #FFFFFF,
+    bg: #000000,
+    primary: #77c714,
+    divider: #979797,
+    shadow: 0 1rem 4rem rgba(0, 0, 0, 0.1)
+);
+
+$fonts: (
+    primary: (
+        'Work Sans',
+        sans-serif
+    )
+);
+
+$font-weight: (
+    regular: 400,
+    bold: 700
+);
+
+$transitions: (
+    normal: 0.4s,
+);

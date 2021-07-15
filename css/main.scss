@@ -1,0 +1,33 @@
+@import 'variables';
+@import 'classes';
+@import 'helpers';
+@import 'mixins';
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+:root {
+  font-size: map-get($sizes, root);
+  height: 100%;
+}
+
+body {
+  overflow-anchor: none;
+  font-family: map-get($fonts, primary);
+  color: map-get($colors, text);
+  font-size: map-get($sizes, text);
+  line-height: map-get($sizes, line-height);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: map-get($colors, bg);
+  height: 100%;
+}
+
+.content-container {
+  @extend %container;
+}
+
+.sr-only {
+  @extend %sr-only;
+}

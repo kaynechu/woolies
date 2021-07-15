@@ -1,0 +1,15 @@
+@import 'variables';
+@import 'helpers';
+@import 'mixins';
+
+%container {
+  margin: 0 auto;
+  max-width: map-get($sizes, container-width);
+  padding: 0 map-get($sizes, device-gutter) map-get($sizes, device-spacing);
+  position: relative;
+
+  @include breakpoint(medium-up) {
+      padding: 0 map-get($sizes, gutter) map-get($sizes, spacing);
+      margin-top: map-get($sizes, device-spacing);
+  }
+}
