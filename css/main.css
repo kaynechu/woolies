@@ -89,9 +89,9 @@ body {
 }
 
 .hero__image {
-  background-image: url("https://s14.postimg.cc/5i4g1gqwh/Untitled-1.jpg");
+  background-image: url("../img/hero.png");
   height: 100%;
-  background-position: center bottom;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -105,6 +105,33 @@ body {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  z-index: 1;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero__text img {
+  width: 100%;
+  height: 100%;
+}
+
+.hero .logo {
+  width: 140px;
+}
+
+@media (min-width: 767px) {
+  .hero__message {
+    max-width: 650px;
+  }
 }
 
 /* Body */
@@ -119,7 +146,13 @@ body {
 }
 
 .body__content__container {
-  padding: 5rem 20px;
+  padding: 2.5rem 20px;
+}
+
+@media (min-width: 1200px) {
+  .body__content__container {
+    padding: 5rem 20px;
+  }
 }
 
 @media (min-width: 767px) {
@@ -159,10 +192,13 @@ body {
 }
 
 .body__image img {
+  max-height: 500px;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 /* Product */
@@ -191,7 +227,7 @@ body {
 
 .product__tiles li {
   height: 480px;
-  margin: .5rem;
+  margin: .25rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid gray;
